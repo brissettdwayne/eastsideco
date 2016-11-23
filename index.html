@@ -5,11 +5,12 @@
     <title>Eastside Co Coding Test</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
   </head>
   <body ng-controller="MainController">
 
     <div class="container">
-      <h1 class="text-xs-center text-sm-center text-md-center col-md-12 col-sm-12 mb-2">Autumn Fashion Fix</h1>
+      <h1 class="text-xs-center text-sm-center text-md-center col-md-12 col-sm-12 mt-2 mb-2">Autumn Fashion Fix</h1>
     </div>
 
 
@@ -26,8 +27,8 @@
 
     <div class="container">
       <div class="row">
-        <div class="card" ng-repeat="post in posts | orderBy : '-item_published' | filter:{service_name: option} | limitTo: limit">
-          <img class="card-img-top" ng-src="{{post.item_data.image_url}}">
+        <div class="card card-outline-danger" ng-repeat="post in posts | orderBy : '-item_published' | filter:{service_name: option} | limitTo: limit">
+          <img class="card-img-top img-rounded" ng-src="{{post.item_data.image_url}}">
             <img class="card-img-top" ng-src="{{post.item_data.image.medium}}">
             <div class="card-block">
               <h5 class="card-title" ng-if="post.item_data.user.username">{{post.item_data.user.username}}</h5>
@@ -42,8 +43,8 @@
     </div>
 
     <div class="container">
-      <div class="text-xs-center text-sm-center text-md-center mb-2">
-        <button type="button" class="btn btn-lg btn-block btn-outline-primary" ng-click="increaselimit()">Load More</button>
+      <div class="text-xs-center text-sm-center text-md-center mt-2 mb-2">
+        <button type="button" class="btn btn-lg btn-block btn-outline-danger" ng-click="increaselimit()">Load More</button>
       </div>
     </div>
 
