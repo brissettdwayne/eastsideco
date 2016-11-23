@@ -4,12 +4,11 @@ angular
   .controller('MainController', ['$scope', '$http', function($scope, $http){
 
     $scope.posts = [];
-    $scope.options = ['', 'Twitter', 'Instagram', 'Manual'];
-    var limitPost = 4;
+    $scope.options = ['Twitter', 'Instagram', 'Manual'];
+    var limitPost = 5;
     $scope.limit = limitPost;
 
     $http.get('posts.json').then(function(response){
-      console.log(response);
       var apiData = response.data.items;
       apiData.forEach(function(data){
         $scope.posts.push(data)
@@ -80,4 +79,4 @@ angular
       }
 
 
-    });
+    })
