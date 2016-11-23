@@ -4,17 +4,16 @@ body {
   background-color: #ddd;
 }
 
-.card-img-top {
-  width:100%;
-  height:auto;
-}
-
 .row {
  -moz-column-width: 25em;
  -webkit-column-width: 25em;
  -moz-column-gap: .5em;
  -webkit-column-gap: .5em;
+}
 
+.card-img-top {
+  width:100%;
+  height:auto;
 }
 
 .card {
@@ -22,4 +21,8 @@ body {
  margin: .5em;
  padding: 0;
  width: 98%;
+}
+
+.card-outline-secondary {
+  background-color: white;
 }
