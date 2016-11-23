@@ -1,7 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #ddd;
+  background-color: lightblue;
+  font-family: 'Taviraj', serif;
+}
+
+.card-img-top {
+  width:100%;
+  height:auto;
 }
 
 .row {
@@ -9,11 +15,7 @@ body {
  -webkit-column-width: 25em;
  -moz-column-gap: .5em;
  -webkit-column-gap: .5em;
-}
 
-.card-img-top {
-  width:100%;
-  height:auto;
 }
 
 .card {
@@ -23,6 +25,10 @@ body {
  width: 98%;
 }
 
-.card-outline-secondary {
+.card:hover {
+  box-shadow: .15em .15em grey;
+}
+
+.card-outline-danger {
   background-color: white;
 }

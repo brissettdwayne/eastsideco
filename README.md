@@ -1,1 +1,0 @@
-Eastside Co Coding Test
