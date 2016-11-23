@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ddd;
+}
+
+.card-img-top {
+  width:100%;
+  height:auto;
+}
+
+.row {
+ -moz-column-width: 25em;
+ -webkit-column-width: 25em;
+ -moz-column-gap: .5em;
+ -webkit-column-gap: .5em;
+
+}
+
+.card {
+ display: inline-block;
+ margin: .5em;
+ padding: 0;
+ width: 98%;
+}
