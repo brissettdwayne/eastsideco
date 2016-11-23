@@ -38,9 +38,9 @@ angular
             tweet = tweet.replace(atSign, "<a href=twitter.com/\$1\ target=\"_blank\">$1</a>");
           }
 
-          if(tweet.match(hashtag)) {
-              tweet = tweet.replace(hashtag, "<a href=twitter.com/\$1\ target=\"_blank\">$1</a>");
-            }
+        if(tweet.match(hashtag)) {
+            tweet = tweet.replace(hashtag, "<a href=twitter.com/\$1\ target=\"_blank\">$1</a>");
+          }
 
         if(asTrusted) {
           return $sce.trustAsHtml(tweet);
